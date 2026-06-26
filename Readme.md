@@ -6,7 +6,7 @@ A high-performance, fully vectorized 3D relativistic ray-tracer written in Pytho
 
 ## Rendered Output (try appreciating this absolute beauty)
 
-![blackHole_rendered](rendered_bh.png)
+![blackHole_rendered](rendered_bh.PNG)
 
 ---
 
