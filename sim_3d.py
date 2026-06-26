@@ -21,8 +21,7 @@ position[:, 1] = grid_y.flatten() + 4.5
 position[:, 2] = -14.0                  
 
 velocity = np.zeros((num_pixels, 3))
-velocity[:, 0] = grid_x.flatten() / 14.0
-velocity[:, 1] = (grid_y.flatten() / 14.0) - 0.28
+velocity[:, 1] = -0.28
 velocity[:, 2] = 1.0
 v_mags = np.sqrt(np.sum(velocity**2, axis=1, keepdims=True))
 velocity /= v_mags
