@@ -2,11 +2,19 @@
 
 A high-performance, fully vectorized 3D relativistic ray-tracer written in Python using NumPy and Matplotlib(a more updated and better version of my previous attempt, which can be found by the name 'Schwarzschild-2D-Orbiter'). This engine simulates the paths of photons traveling through curved spacetime around a non-rotating (**Schwarzschild**) black hole, generating mathematically accurate photographs of gravitational lensing and the iconic warped accretion disk halo structure.
 
+**Version-2 Update :** I rendered around 300 images of the black hole, by changing the orientation a bit each frame, by making some changes in the script, and then used FFmpeg to just create a 10sec video from thoes 300 images, at 30fps. I tried many attempts, to make it as beautiful as i could also by using some good LLMs for that purpose. It took 12.10 seconds for one frame to be rendered, and i rendered 300 frames, for a 10 sec video, meaning 1 hours for one video. And, i made 4 videos, so heavy day for my laptop :P, anyways enjoy the animations. 
+
 ---
 
 ## Rendered Output (try appreciating this absolute beauty)
 
-![blackHole_rendered](rendered_bh.PNG)
+![blackHole_rendered](rendered_bh.png)
+
+---
+
+## Rendered Animation (the best one out of the 4 is displayed here)
+
+![blackHole_animation](black_hole_final_final.gif)
 
 ---
 
@@ -68,6 +76,8 @@ You can fly the camera around the singularity by manipulating, the code. To chan
 ```python
 position[:, 1] = grid_y.flatten() + 4.5
 ```
+
+---
+
 ## Conclusion
 Honestly, this is the best and the most satisfying thing i have ever built, had been working on it since a long time, and finally seeing the output as that beautiful image, is just crazy.
-
